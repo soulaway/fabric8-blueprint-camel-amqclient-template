@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Reusable features available out-of-the-box in fabric-karaf. -->
+<features>
+    <feature name="feature-${artifactId}" version="${version}">
+ 		<feature>transaction</feature>
+        <feature>jpa</feature>
+        <feature>jndi</feature>
+        <feature>fabric-camel</feature>        
+        
+        <feature>camel-core</feature>
+        <feature>camel-blueprint</feature>
+		
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-jms/3.2.8.RELEASE_1</bundle>
+		<bundle>mvn:org.apache.camel/camel-spring/${camel.version}</bundle>
+    </feature>
+</features>
